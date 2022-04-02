@@ -1,7 +1,7 @@
 import './App.css';
 import {movies} from './movies';
 
-function App() {
+const App = () => {
     return (
         <div>
             <pre>{JSON.stringify(movies, null, 4)}</pre>
