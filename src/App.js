@@ -5,21 +5,28 @@ import {movies} from './movies';
 const App = () => {
     return (
         <div>
+		{
+			/*
 			// pre tag renders code in a code type way
 			// curly brackets signify javascript
 			// for all movies  print the title in a p tag
 			// map function below will be important 
 			// movie is a stand-in for whatever is being looped.
 			// this is like a for loop in python
+			
+			// Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>? (17:5)
+			// with mapping react tries to return one element for each item <> things like kbelow are called fragments
+			*/
+		}
 			{
-				movies.map((movie) => <p>{movie.title}</p>)
+				movies.map((movie) =>
+					
+					<div>
+						<p>{movie.title}</p>
+						<img src={movie.posterUrl}/>
+					</div>
+					)
 			}
-			
-			
-			<p>{movies[0].title}</p>
-			<p>{movies[1].title}</p>
-			<p>{movies[2].title}</p>
-            <pre>{JSON.stringify(movies, null, 4)}</pre>
         </div>
     );
 }
