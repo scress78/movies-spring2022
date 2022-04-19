@@ -24,6 +24,10 @@ const App = () => {
 	
 	console.log(currentMovie);
 	
+	const clearCurrentMovie = () => {
+		setCurrentMovie(null);
+	}
+	
 	
 	/*
 	function useState(startingState){
@@ -62,9 +66,13 @@ const App = () => {
 					</div>
 				)
 			}
+			<button onClick={clearCurrentMovie}>Clear</button>
 			
 			{
-				/*check if the movie exists*
+				/*
+				above make sure to not have () following function names, because they'll be called CONSTANTLY
+				
+				check if the movie exists*
 				if it does type the stuff we want
 				if not type no movie selected*/
 			}

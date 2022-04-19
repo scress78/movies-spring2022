@@ -1,4 +1,6 @@
 import './App.css';
+import {useState} from "react";
+
 const MoviePreview = (props) => {
 	
 	{
@@ -15,17 +17,41 @@ const MoviePreview = (props) => {
 	}
 	
 	const {movieToPreview, setCurrentMovie} = props;
+	const [clickCount, setClickCount] = useState(0);
+	
+	const updateMovieSelection = () => {
+		setCurrentMovie(movieToPreview)
+		setClickCount(clickCount + 1);
+		
+	}
 	
 	return(
 		<>	
 			<p>{movieToPreview.title}</p>
+			<p>{`Clicked ${clickCount} times`}</p>
 			<img
 				src={movieToPreview.posterUrl} 
 				alt={movieToPreview.title}
-				onClick={() => setCurrentMovie(movieToPreview)}
+				onClick={updateMovieSelection}
+					
 			/>
 		</>
+		
+		
 	)
+	
+	{
+		/*
+		further above is the backtic, *(upper left keyboard) and then variables with ${}
+		
+		same thing as **above onClick
+		onClick = {() => {
+			setCurrentMovie(movieToPreview)
+			setClickCount(clickCount + 1);
+		}}
+		*/
+	}
+	
 }
 
 export default MoviePreview;
