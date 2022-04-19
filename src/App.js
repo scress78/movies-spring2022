@@ -1,6 +1,8 @@
 import './App.css';
 import {movies} from './movies';
 import MoviePreview from './MoviePreview'
+import MovieDetails from './MovieDetails'
+
 import {useState} from "react";
 
 //file with same name as component common theme.. note import export
@@ -67,20 +69,11 @@ const App = () => {
 				if not type no movie selected*/
 			}
 			
-			{
-			currentMovie ? 
-				<div>
-					<p>{JSON.stringify(currentMovie)}</p>
-					<p>{currentMovie.title}</p>
-					<p>{currentMovie.description}</p>
-					<p>{currentMovie.rating}</p>
-					<p>{currentMovie.director}</p>
-					<p>{currentMovie.releaseYear}</p>
-					<p>{currentMovie.categories}</p>
-				</div>
-			:
-				<p>No movie selected</p>
-			}
+			<MovieDetails
+				currentMovie={currentMovie}
+			>
+				
+			</MovieDetails>
 			
 			
         </div>
