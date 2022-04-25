@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/movies-spring2022/static/css/main.b128cb60.css",
+    "main.js": "/movies-spring2022/static/js/main.55974273.js",
+    "index.html": "/movies-spring2022/index.html",
+    "main.b128cb60.css.map": "/movies-spring2022/static/css/main.b128cb60.css.map",
+    "main.55974273.js.map": "/movies-spring2022/static/js/main.55974273.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b128cb60.css",
+    "static/js/main.55974273.js"
+  ]
+}
