@@ -66,6 +66,7 @@ const App = () => {
 					</div>
 				)
 			}
+			
 			<button onClick={clearCurrentMovie}>Clear</button>
 			
 			{
