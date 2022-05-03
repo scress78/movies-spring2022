@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/movies-spring2022/static/css/main.b128cb60.css",
-    "main.js": "/movies-spring2022/static/js/main.55974273.js",
+    "main.css": "/movies-spring2022/static/css/main.6a43c1ec.css",
+    "main.js": "/movies-spring2022/static/js/main.539e78be.js",
+    "static/media/double-bubble-outline.png": "/movies-spring2022/static/media/double-bubble-outline.0694bcab931c5d2c1b71.png",
     "index.html": "/movies-spring2022/index.html",
-    "main.b128cb60.css.map": "/movies-spring2022/static/css/main.b128cb60.css.map",
-    "main.55974273.js.map": "/movies-spring2022/static/js/main.55974273.js.map"
+    "main.6a43c1ec.css.map": "/movies-spring2022/static/css/main.6a43c1ec.css.map",
+    "main.539e78be.js.map": "/movies-spring2022/static/js/main.539e78be.js.map"
   },
   "entrypoints": [
-    "static/css/main.b128cb60.css",
-    "static/js/main.55974273.js"
+    "static/css/main.6a43c1ec.css",
+    "static/js/main.539e78be.js"
   ]
 }
