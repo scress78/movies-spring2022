@@ -66,8 +66,11 @@ const App = () => {
 					</div>
 				)
 			}
+			<p><br></br>
+				<button class="button" onClick={clearCurrentMovie}>Clear</button>
+			</p>
 			
-			<button onClick={clearCurrentMovie}>Clear</button>
+			
 			
 			{
 				/*
@@ -84,8 +87,8 @@ const App = () => {
 				
 			</MovieDetails>
 			
-			
         </div>
+		
     );
 }
 

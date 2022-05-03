@@ -1,12 +1,41 @@
-body {
+body, p {
   margin: 0;
   padding: 0;
-  font-family: 'Oswald', "ariel";
+  font-family: 'Copperplate', 'Oswald', "ariel";
   font-weight: 400;
   font-size: 18px;
+  color: green;
   /*background image below */
   background-image: url('../img/double-bubble-outline.png')
 }
 
+p:hover {
+  margin: 0;
+  padding: 0;
+  font-family: 'Copperplate', 'Oswald', "ariel";
+  font-weight: 400;
+  font-size: 18px;
+  color: black;
+}
 
 
+.movie-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.currentMovie{
+  color: purple;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}

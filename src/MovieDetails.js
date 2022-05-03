@@ -3,19 +3,19 @@ const MovieDetails = (props) => {
 	
 	const {currentMovie} = props;
 	// equivalent to const currentMovie - props.currentMovie;
+	// <p>{JSON.stringify(currentMovie)}</p>
+	// <p>{currentMovie.categories}</p>
 	
 	return(
 		<>
 			{
 			currentMovie ? 
-				<div>
-					<p>{JSON.stringify(currentMovie)}</p>
-					<p>{currentMovie.title}</p>
-					<p>{currentMovie.description}</p>
-					<p>{currentMovie.rating}</p>
-					<p>{currentMovie.director}</p>
-					<p>{currentMovie.releaseYear}</p>
-					<p>{currentMovie.categories}</p>
+				<div class="currentMovie">
+					<h1>Selected Movie - {currentMovie.title}</h1>
+					<h3>Description: {currentMovie.description}</h3>
+					<h3>Rating: {currentMovie.rating}</h3>
+					<h3>Director: {currentMovie.director}</h3>
+					<h3>Release Year: {currentMovie.releaseYear}</h3>
 				</div>
 			:
 				<p>No movie selected</p>

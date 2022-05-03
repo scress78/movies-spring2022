@@ -26,16 +26,16 @@ const MoviePreview = (props) => {
 	}
 	
 	return(
-		<>	
-			<p>{movieToPreview.title}</p>
-			<p>{`Clicked ${clickCount} times`}</p>
+		<p>	
+			<h2 style={{flex: 1, flexWrap:'wrap', width:'auto'}}>{movieToPreview.title}</h2>
+			<h3>{`Clicked ${clickCount} times`}</h3>
 			<img
 				src={movieToPreview.posterUrl} 
 				alt={movieToPreview.title}
 				onClick={updateMovieSelection}
 					
 			/>
-		</>
+		</p>
 		
 		
 	)
